@@ -1,22 +1,138 @@
-<!--For the record, I have absolutely no idea what I am doing. 
-	-Sean-->
+<!--For the record, I have only the faintest idea what I am doing. I have never coded in html before. (Though evidently this isn't code? What is it then!) I have never even seen the backend code of a web page. 
+I don't understand how this is read or executed or what all of the "<div>" parts are actually doing and I didn't initially know what you meant by directories. I was so lost on the initial lecture that I didn't 
+even know enough to ask questions about what I didn't understand. It would've just been "what on earth are you doing." I've never even had an interest in web design. You spent a lot of time talking about things 
+we'll use later in the semester and that just made it harder to understand what was and was not important to completeing this task. I'd also like to point out that you said you would be using Sublime and then 
+spent most of the video looking at Visual Studio Code. You included reference pages that explain different functions, but I don't understand how to use them in the context of this format. Look, I understand that a lot of the people who go into this already have a background working with this kind of thing, but I just don't. I want to learn, 
+and I'm alright with teaching myself things, but that takes a lot of time. Can you please meet me on my level? The only thing I understood enough to do even after rewatching the video was to mostly just copy 
+your code and make enough changes for the page to look different. I HATE that. I like to understand what I'm doing, and when I don't I second guess everything. I'll end up spending 7 hours on something that 
+should've taken 1 in a week where I can't afford to be wasting time like that.)
+			-Sean-->
 <!doctype html>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>About</title>
 </head>
-<body style="font-family: consolas;">
-	<div class="about">
-		<h1>About Page</h1>
-		<p>Our about page</p>
+
+<style type="text/css">
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+ <!-- This format is one of the things you didn't really explain. I guess this is defining a class we use later, but that's all I understand about it.-->
+ <!-- Am I even using comments right? These look super weird in sublime.-->
+.column {
+	float: left;
+	width: 25%
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+	background-color: #663300;
+}
+
+.about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #ff9966;
+	color: white;
+}
+
+.container {
+	padding: 0 16px;
+}
+
+.title {
+	color: grey;
+}
+
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #339933;
+	text-align: center;
+	cursor: pointer;
+	width: 100%
+}
+
+.button:hover {
+	background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+	.coloumn{
+		width: 100%;
+		display: block;
+	}
+}
+
+</style>
+<body style="font-family: fantasy; background-color: #996633">
+	<div class="about-section">
+		<h1>About Us Page</h1>
+		<p>The Invulnerable Vagrant is a store specializing in quality enchanted goods out of the city of Zadash.</p>
 	</div>
-	<h2>Executive Team</h2>
-	<div class="row">
+
+	<h2 style="text-align: center"> Your humble servers </h2>
+	<div class="row"> <!-- There is something wrong with my rows, and I have no idea how to fix it. I'm only getting one card per row. Honestly, it looks fine, so I'm just going to keep it like this for now, but can you tell what I did wrong? -->
+
 		<div class="column">
 			<div class="card">
-				<img src="">
+				<img src="images/PumatPrime.jpg" style="width: 100px; height: 100px">
+				<div class="container">
+					<h2>Enchanter Pumat Prime</h2>
+					<p class="title">Primary Craftsman and Proprietor</p>
+					<p>Since I opened the Invulnerable vagrant 20 years ago I have been making wares to sell in the great city of Zadash. In recent years I’ve been spending less and less time behind the counter myself and more time perfecting my craft, but the other Pumats have been more than capable of handling the front. I would respectfully ask that you only come to me when you want to commission a specific item and are willing to pay the additional labor costs that entails.</p>
+					<p>PumatPrime@CS230.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="images/PumatSol1.jpg" style="width: 100px; height: 100px">
+				<div class="container">
+					<h2>Enchanter Pumat Sol</h2>
+					<p class="title">Craftsman and Store Hand</p>
+					<p>Since I came into being twenty years ago, I have been managing the front desk of The Invulnerable Vagrant. I specialize in customer service and demonstrations of our stock. Feel free to ask me anything and will reply just as soon as I have finished with any customers who may have approached first.</p>
+					<p>PumatSol@CS230.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="images/PumatSol2.jpg" style="width: 100px; height: 100px">
+				<div class="container">
+					<h2>Also Enchanter Pumat Sol</h2>
+					<p class="title">Craftsman and Store Hand</p>
+					<p>Since I came into being twenty years ago, I have been managing our stock here at the Invulnerable Vagrant. I specialize in the safe storage of delicate and dangerous items, as well as keeping a neat and presentable store front. I am available for consultation on the proper storage of magical artifacts.</p>
+					<p>AnotherPumatSol@CS230.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="images/PumatSol3.jpg" style="width: 100px; height: 100px">
+				<div class="container">
+					<h2><i>Also</i> Enchanter Pumat Sol</h2> <!-- I wanted to bold the "Also" on this one, but evidently all of the heading text is already bold and I don't know how to change that.-->
+					<p class="title">Craftsman and Store Hand</p>
+					<p>Since I came into existence 20 years ago, I’ve been acting as an extra pair of hands to the other Pumats. I assist in difficult or simply large crafting projects and with the store during the busy periods. I specialize in managing our supply chain to ensure that Pumat Prime always has all of the materials he needs to conduct his work. You can contact me with offers on raw materials.</p>
+					<p>YetAnotherPumatSol@CS230.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
 			</div>
 		</div>
 	</div>
