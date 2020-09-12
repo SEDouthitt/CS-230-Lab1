@@ -1,0 +1,58 @@
+type="text/css"
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+ <!-- This format is one of the things you didn't really explain. I guess this is defining a class we use later, but that's all I understand about it.-->
+ <!-- Am I even using comments right? These look super weird in sublime.-->
+.column {
+	float: left;
+	width: 25%
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+	background-color: #663300;
+}
+
+.about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #ff9966;
+	color: white;
+}
+
+.container {
+	padding: 0 16px;
+}
+
+.title {
+	color: grey;
+}
+
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #339933;
+	text-align: center;
+	cursor: pointer;
+	width: 100%
+}
+
+.button:hover {
+	background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+	.coloumn{
+		width: 100%;
+		display: block;
+	}
+}
+
