@@ -36,7 +36,7 @@ require "includes/header.php"
                             <button type="submit" name="signup-submit" class="btn btn-success btn-lg">Register</button>
                         </div>          
                     </form>
-                    <div class="text-center">Already Registered?<a href="login.html">Sign in</a></div>
+                    <div class="text-center">Already Registered?<a href="login.php">Sign in</a></div>
                 </div>
             </div>
         </div>
