@@ -32,9 +32,9 @@ if(isset($_POST['login-submit'])){
 
             if($pass_check == true){
                 session_start();
-                $SESSION['uid'] = $data['uid'];
-                $SESSION['fname'] = $data['fname'];
-                $SESSION['username'] = $data['uname'];
+                $_SESSION['uid'] = $data['uid'];
+                $_SESSION['fname'] = $data['fname'];
+                $_SESSION['username'] = $data['uname'];
 
                 header("Location: ../profile.php?login=success");
                 exit();
